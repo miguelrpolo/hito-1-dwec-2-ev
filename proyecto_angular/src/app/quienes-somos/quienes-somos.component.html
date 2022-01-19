@@ -19,13 +19,21 @@
 
     <div style="text-align:center">
       <h2>
-          Número de ciudades donde damos nuestros servicios:
+          Número de ciudades donde damos nuestros servicios (JSON local):
       </h2>
       <ul *ngFor="let item of countryList">
          <li>
             [{{item.code}}]{{item.name}}
          </li>
       </ul>
+      <h2>
+        Número de personajes que hemos creado (JSON en servidor ajeno):
+    </h2>
+    <ul *ngFor="let item of lista_personajes">
+       <li>
+         Campeón: {{item.id}}, llamado {{item.name}}, {{item.title}}
+       </li>
+    </ul>
   </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
